@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" async></script>
+    <title>Curriculum Vitae de Josephine</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#exp">Experiencia</a></li>
+          <li><a class="nav-link" href="#project">Proyectos</a></li>
+          <li><a class="nav-link" href="#skill">Skills</a></li>
+          <li><a class="nav-link" href="#edu">Educación</a></li>
+          <li><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="header-info">
+          <h1 class="heading-primary">Josefina Herrera</h1>
+          <h3 class="heading-tertiary">
+            Diseñadora UX/UI y Desarrolladora Fronend
+          </h3>
+        </div>
+        <img
+          class="perfil-photo"
+          src="./img/foto-perfil.jpg"
+          alt="Foto de Josefina Herrera"
+        />
+      </div>
+    </header>
+    <main class="container">
+      <section class="about-me">
+        <h2 class="heading-secondary">Acerca de mi</h2>
+        <p class="about-me-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia
+          officiis illum facilis, esse magni veniam minima dolore provident
+          nulla, dolorem quidem pariatur deserunt et soluta similique minus
+          vitae quibusdam!
+        </p>
+      </section>
+      <section id="exp" class="experiencia">
+        <h2 class="heading-secondary heading-dinamic btn-exp selected">
+          Experiencia
+        </h2>
+        <div class="exp">
+          <div class="card-info">
+            <div class="card-heading">
+              <span class="place">Argentina Programa</span>
+              <span class="education-years">2018-2021</span>
+            </div>
+            <p class="text-card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis corporis, alias repellat eum fugiat similique!
+              Blanditiis rerum quas quos quia, exercitationem, illum magni sed
+              nemo recusandae omnis, accusamus voluptatem et.
+            </p>
+          </div>
+          <div class="card-info">
+            <div class="card-heading">
+              <span class="place">Front end Academy</span>
+              <span class="years">2023 - Presente</span>
+            </div>
+            <p class="text-card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis corporis, alias repellat eum fugiat similique!
+              Blanditiis rerum quas quos quia, exercitationem, illum magni sed
+              nemo recusandae omnis, accusamus voluptatem et.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="project" class="projects">
+        <h2 class="heading-secondary heading-dinamic btn-project selected">
+          Proyectos
+        </h2>
+        <div class="carousel">
+          <div class="project project-1">
+            <img
+              class="project-img"
+              src="./img/projects/Instagram.png"
+              alt="Foto de clon de intagram"
+            />
+            <div>
+              <p class="project-text">
+                En este projecto orem ipsum dolor sit amet consectetur
+                adipisicing elit. Recusandae perferendis adipisci explicabo
+                eius. Sed eum vel maxime voluptate ipsum incidunt.
+              </p>
+              <p class="project-title">Clon de Instagram</p>
+            </div>
+          </div>
+
+          <buttom class="btn btn-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </buttom>
+          <buttom class="btn btn-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </buttom>
+          <div class="squares">
+            <button class="square square--fill">&nbsp;</button>
+            <button class="square">&nbsp;</button>
+            <button class="square">&nbsp;</button>
+            <button class="square">&nbsp;</button>
+          </div>
+        </div>
+      </section>
+      <section id="skill" class="skill">
+        <h2 class="heading-secondary heading-dinamic btn-skill selected">
+          Skills
+        </h2>
+        <div class="logos">
+          <figure class="skill-logo">
+            <img src="./img/logos-skills/logo-figma.svg" alt="Figma logo" />
+            <figcaption>Figma</figcaption>
+          </figure>
+          <figure class="skill-logo">
+            <img src="./img/logos-skills/logo-react.svg" alt="React logo" />
+            <figcaption>React</figcaption>
+          </figure>
+          <figure class="skill-logo">
+            <img src="./img/logos-skills/logo-sass.svg" alt="Sass logo" />
+            <figcaption>Sass</figcaption>
+          </figure>
+          <figure class="skill-logo">
+            <img
+              src="./img/logos-skills/logo-javascript.svg"
+              alt="Javascript logo"
+            />
+            <figcaption>Javascript</figcaption>
+          </figure>
+          <figure class="skill-logo">
+            <img src="./img/logos-skills/logo-css3.svg" alt="CSS3 logo" />
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure class="skill-logo">
+            <img src="./img/logos-skills/logo-html5.svg" alt="HTML logo" />
+            <figcaption>HTML</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="edu">
+        <h2 class="heading-secondary heading-dinamic btn-edu selected">
+          Educación
+        </h2>
+        <div class="edu">
+          <div class="card-info">
+            <div class="card-heading">
+              <span class="place">UTN</span>
+              <span class="education-years">2018-2021</span>
+            </div>
+            <p class="text-card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis corporis, alias repellat eum fugiat similique!
+              Blanditiis rerum quas quos quia, exercitationem, illum magni sed
+              nemo recusandae omnis, accusamus voluptatem et.
+            </p>
+          </div>
+          <div class="card-info">
+            <div class="card-heading">
+              <span class="place">Ticmas</span>
+              <span class="years">2023</span>
+            </div>
+            <p class="text-card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis corporis, alias repellat eum fugiat similique!
+              Blanditiis rerum quas quos quia, exercitationem, illum magni sed
+              nemo recusandae omnis, accusamus voluptatem et.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="heading-secondary heading-dinamic btn-contact selected">
+          Contacto
+        </h2>
+        <div class="contact">
+          <h2 class="heading-secondary">Contactame</h2>
+          <p class="contact-text">
+            Enviame un mensaje por aquí y te contestare lo más brevemente
+            posible
+          </p>
+          <form class="contact-form" name="contact-form">
+            <fieldset class="form-container">
+              <div class="form-col">
+                <label for="nombre">Nombre</label>
+                <input
+                id="nombre"
+                type="text"
+                placeholder="nombre"
+                name="nombre"
+                required
+                />
+                <label for="email">Email</label>
+                <input
+                id="email"
+                type="email"
+                placeholder="yo@ejemplo.com"
+                name="email"
+                required
+                />
+                <label for="asunto">Asunto</label>
+                <input
+                id="asunto"
+                type="text"
+                name="asunto"
+                />
+              </div>
+              
+              <div class="form-col">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+              </div>
+            </fieldset>
+            <button for="contact-form" class="btn--form">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-info">
+          <div class="email">
+            <a class="footer-link" href="mailto:josefinaherrera@jherrera.com">
+              <img
+                class="footer-logo"
+                src="./img/logos-contact/mail-outline.svg"
+                alt="Mail logo"
+              />
+              <p>josefinaherrera@jherrera.com</p>
+            </a>
+          </div>
+          <div class="tel">
+            <a class="footer-link" href="tel:+54-260-4999999">
+              <img
+                class="footer-logo"
+                src="./img/logos-contact/call-outline.svg"
+                alt="Telefono logo"
+              />
+              <p>+54-2604-999999</p>
+            </a>
+          </div>
+          <div>
+            <a class="footer-link" href="https://www.google.com/maps/">
+              <img
+                class="footer-logo"
+                src="./img/logos-contact/location-outline.svg"
+                alt="Location logo"
+              />
+              <p>San Rafael - Mendoza - Argentina</p>
+            </a>
+          </div>
+        </div>
+        <div class="social-media">
+          <div>
+            <a class="social-link" href="https://linkedin.com" target="_blank">
+              <img
+                class="social-icon"
+                src="./img/logos-contact/logo-linkedin.svg"
+                alt="Linkedin logo"
+              />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          <div>
+            <a class="social-link" href="https://twitter.com" target="_blank">
+              <img
+                class="social-icon"
+                src="./img/logos-contact/logo-twitter.svg"
+                alt="Twitter logo"
+              />
+              <span>Twitter</span>
+            </a>
+          </div>
+          <div>
+            <a class="social-link" href="https://instagram.com" target="_blank">
+              <img
+                class="social-icon"
+                src="./img/logos-contact/logo-instagram.svg"
+                alt="Instagram logo"
+              />
+              <span>Instagram</span>
+            </a>
+          </div>
+          <div>
+            <a class="social-link" href="https://facebook.com" target="_blank">
+              <img
+                class="social-icon"
+                src="./img/logos-contact/logo-facebook.svg"
+                alt="Facebook logo"
+              />
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
