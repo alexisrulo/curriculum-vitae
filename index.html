@@ -25,7 +25,7 @@
           <li><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
       </nav>
-      <div class="container">
+      <div>
         <div class="header-info">
           <h1 class="heading-primary">Josefina Herrera</h1>
           <h3 class="heading-tertiary">
@@ -41,8 +41,10 @@
     </header>
     <main class="container">
       <section class="about-me">
-        <h2 class="heading-secondary">Acerca de mi</h2>
-        <p class="about-me-text">
+        <h2 class="heading-secondary heading-dinamic selected" data-for=".about-me-text">
+          Acerca de mi
+        </h2>
+        <p class="about-me-text container">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia
           officiis illum facilis, esse magni veniam minima dolore provident
           nulla, dolorem quidem pariatur deserunt et soluta similique minus
@@ -50,10 +52,10 @@
         </p>
       </section>
       <section id="exp" class="experiencia">
-        <h2 class="heading-secondary heading-dinamic btn-exp selected">
+        <h2 class="heading-secondary heading-dinamic selected" data-for=".exp">
           Experiencia
         </h2>
-        <div class="exp">
+        <div class="exp container">
           <div class="card-info">
             <div class="card-heading">
               <span class="place">Argentina Programa</span>
@@ -81,26 +83,72 @@
         </div>
       </section>
       <section id="project" class="projects">
-        <h2 class="heading-secondary heading-dinamic btn-project selected">
+        <h2 class="heading-secondary heading-dinamic selected" data-for=".carousel">
           Proyectos
         </h2>
         <div class="carousel">
-          <div class="project project-1">
-            <img
-              class="project-img"
-              src="./img/projects/Instagram.png"
-              alt="Foto de clon de intagram"
-            />
-            <div>
-              <p class="project-text">
-                En este projecto orem ipsum dolor sit amet consectetur
-                adipisicing elit. Recusandae perferendis adipisci explicabo
-                eius. Sed eum vel maxime voluptate ipsum incidunt.
-              </p>
-              <p class="project-title">Clon de Instagram</p>
+          <div class="slides">
+            <div class="project">
+              <img
+                class="project-img"
+                src="./img/projects/Instagram.png"
+                alt="Foto de clon de intagram"
+              />
+              <div>
+                <p class="project-text">
+                  En este projecto orem ipsum dolor sit amet consectetur
+                  adipisicing elit. Recusandae perferendis adipisci explicabo
+                  eius. Sed eum vel maxime voluptate ipsum incidunt.
+                </p>
+                <p class="project-title">Clon de Instagram</p>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="./img/projects/Calculadora.png"
+                alt="Foto de aplicacion de calculadora"
+              />
+              <div>
+                <p class="project-text">
+                  En este projecto Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Facere, ut? Aliquam voluptates dolorum
+                  nesciunt quo.
+                </p>
+                <p class="project-title">Aplicacion Calculadora</p>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="./img/projects/ecommerce.jpg"
+                alt="Foto de ecommerce"
+              />
+              <div>
+                <p class="project-text">
+                  En este projecto orem ipsum dolor sit amet consectetur
+                  adipisicing elit. Recusandae perferendis adipisci explicabo
+                  eius. Sed eum vel maxime voluptate ipsum incidunt.
+                </p>
+                <p class="project-title">Ecommerce</p>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="./img/projects/Lading-page.png"
+                alt="Foto de Landing Page"
+              />
+              <div>
+                <p class="project-text">
+                  En este projecto Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Facere, ut? Aliquam voluptates dolorum
+                  nesciunt quo.
+                </p>
+                <p class="project-title">Landing Page</p>
+              </div>
             </div>
           </div>
-
           <buttom class="btn btn-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,15 +182,12 @@
             </svg>
           </buttom>
           <div class="squares">
-            <button class="square square--fill">&nbsp;</button>
-            <button class="square">&nbsp;</button>
-            <button class="square">&nbsp;</button>
-            <button class="square">&nbsp;</button>
+            <!-- <button class="square square--fill">&nbsp;</button> -->
           </div>
         </div>
       </section>
       <section id="skill" class="skill">
-        <h2 class="heading-secondary heading-dinamic btn-skill selected">
+        <h2 class="heading-secondary heading-dinamic selected" data-for=".logos">
           Skills
         </h2>
         <div class="logos">
@@ -176,10 +221,10 @@
         </div>
       </section>
       <section id="edu">
-        <h2 class="heading-secondary heading-dinamic btn-edu selected">
+        <h2 class="heading-secondary heading-dinamic selected" data-for=".edu">
           Educación
         </h2>
-        <div class="edu">
+        <div class="edu container">
           <div class="card-info">
             <div class="card-heading">
               <span class="place">UTN</span>
@@ -207,10 +252,10 @@
         </div>
       </section>
       <section id="contact">
-        <h2 class="heading-secondary heading-dinamic btn-contact selected">
+        <h2 class="heading-secondary heading-dinamic selected" data-for=".contact">
           Contacto
         </h2>
-        <div class="contact">
+        <div class="contact container">
           <h2 class="heading-secondary">Contactame</h2>
           <p class="contact-text">
             Enviame un mensaje por aquí y te contestare lo más brevemente
@@ -221,28 +266,24 @@
               <div class="form-col">
                 <label for="nombre">Nombre</label>
                 <input
-                id="nombre"
-                type="text"
-                placeholder="nombre"
-                name="nombre"
-                required
+                  id="nombre"
+                  type="text"
+                  placeholder="nombre"
+                  name="nombre"
+                  required
                 />
                 <label for="email">Email</label>
                 <input
-                id="email"
-                type="email"
-                placeholder="yo@ejemplo.com"
-                name="email"
-                required
+                  id="email"
+                  type="email"
+                  placeholder="yo@ejemplo.com"
+                  name="email"
+                  required
                 />
                 <label for="asunto">Asunto</label>
-                <input
-                id="asunto"
-                type="text"
-                name="asunto"
-                />
+                <input id="asunto" type="text" name="asunto" />
               </div>
-              
+
               <div class="form-col">
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" required></textarea>
@@ -252,83 +293,82 @@
           </form>
         </div>
       </section>
-
-      <footer>
-        <div class="footer-info">
-          <div class="email">
-            <a class="footer-link" href="mailto:josefinaherrera@jherrera.com">
-              <img
-                class="footer-logo"
-                src="./img/logos-contact/mail-outline.svg"
-                alt="Mail logo"
-              />
-              <p>josefinaherrera@jherrera.com</p>
-            </a>
-          </div>
-          <div class="tel">
-            <a class="footer-link" href="tel:+54-260-4999999">
-              <img
-                class="footer-logo"
-                src="./img/logos-contact/call-outline.svg"
-                alt="Telefono logo"
-              />
-              <p>+54-2604-999999</p>
-            </a>
-          </div>
-          <div>
-            <a class="footer-link" href="https://www.google.com/maps/">
-              <img
-                class="footer-logo"
-                src="./img/logos-contact/location-outline.svg"
-                alt="Location logo"
-              />
-              <p>San Rafael - Mendoza - Argentina</p>
-            </a>
-          </div>
-        </div>
-        <div class="social-media">
-          <div>
-            <a class="social-link" href="https://linkedin.com" target="_blank">
-              <img
-                class="social-icon"
-                src="./img/logos-contact/logo-linkedin.svg"
-                alt="Linkedin logo"
-              />
-              <span>LinkedIn</span>
-            </a>
-          </div>
-          <div>
-            <a class="social-link" href="https://twitter.com" target="_blank">
-              <img
-                class="social-icon"
-                src="./img/logos-contact/logo-twitter.svg"
-                alt="Twitter logo"
-              />
-              <span>Twitter</span>
-            </a>
-          </div>
-          <div>
-            <a class="social-link" href="https://instagram.com" target="_blank">
-              <img
-                class="social-icon"
-                src="./img/logos-contact/logo-instagram.svg"
-                alt="Instagram logo"
-              />
-              <span>Instagram</span>
-            </a>
-          </div>
-          <div>
-            <a class="social-link" href="https://facebook.com" target="_blank">
-              <img
-                class="social-icon"
-                src="./img/logos-contact/logo-facebook.svg"
-                alt="Facebook logo"
-              />
-              <span>Facebook</span>
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="container">
+      <div class="footer-info">
+        <div class="email">
+          <a class="footer-link" href="mailto:josefinaherrera@jherrera.com">
+            <img
+              class="footer-logo"
+              src="./img/logos-contact/mail-outline.svg"
+              alt="Mail logo"
+            />
+            <p>josefinaherrera@jherrera.com</p>
+          </a>
+        </div>
+        <div class="tel">
+          <a class="footer-link" href="tel:+54-260-4999999">
+            <img
+              class="footer-logo"
+              src="./img/logos-contact/call-outline.svg"
+              alt="Telefono logo"
+            />
+            <p>+54-2604-999999</p>
+          </a>
+        </div>
+        <div>
+          <a class="footer-link" href="https://www.google.com/maps/">
+            <img
+              class="footer-logo"
+              src="./img/logos-contact/location-outline.svg"
+              alt="Location logo"
+            />
+            <p>San Rafael - Mendoza - Argentina</p>
+          </a>
+        </div>
+      </div>
+      <div class="social-media">
+        <div>
+          <a class="social-link" href="https://linkedin.com" target="_blank">
+            <img
+              class="social-icon"
+              src="./img/logos-contact/logo-linkedin.svg"
+              alt="Linkedin logo"
+            />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div>
+          <a class="social-link" href="https://twitter.com" target="_blank">
+            <img
+              class="social-icon"
+              src="./img/logos-contact/logo-twitter.svg"
+              alt="Twitter logo"
+            />
+            <span>Twitter</span>
+          </a>
+        </div>
+        <div>
+          <a class="social-link" href="https://instagram.com" target="_blank">
+            <img
+              class="social-icon"
+              src="./img/logos-contact/logo-instagram.svg"
+              alt="Instagram logo"
+            />
+            <span>Instagram</span>
+          </a>
+        </div>
+        <div>
+          <a class="social-link" href="https://facebook.com" target="_blank">
+            <img
+              class="social-icon"
+              src="./img/logos-contact/logo-facebook.svg"
+              alt="Facebook logo"
+            />
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
